@@ -1,0 +1,15 @@
+# SEE https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javapackager.html
+
+JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+javapackager \
+  -deploy -Bruntime=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home \
+  -native image \
+  -outdir Release \
+  -outfile MacJavaProperties.app \
+  -srcdir . \
+  -srcfiles ScrollPaneDemo.jar \
+  -appclass ScrollPaneDemo \
+  -name "MacJavaProperties" \
+  -title "MacJavaProperties"
+
