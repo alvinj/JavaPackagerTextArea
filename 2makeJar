@@ -1,0 +1,5 @@
+jar cmf manifest MacJavaPropertiesApp.jar *.class
+
+echo "created MacJavaPropertiesApp.jar from MacJavaPropertiesApp.java and manifest"
+
+

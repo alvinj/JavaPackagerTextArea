@@ -1,5 +1,0 @@
-jar cmf MainClass.txt ScrollPaneDemo.jar *.class
-
-echo "created ScrollPaneDemo.jar from ScrollPaneDemo.java"
-
-
